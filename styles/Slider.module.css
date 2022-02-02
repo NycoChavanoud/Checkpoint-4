@@ -1,0 +1,13 @@
+.carousselContainer {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--mainColor);
+  border-radius: 1em;
+}
+
+.photoCaroussel {
+  border-radius: 1em 1em 0 0;
+}

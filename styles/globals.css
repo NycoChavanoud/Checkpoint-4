@@ -1,16 +1,91 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Antic+Didone&family=Rowdies:wght@400;700&display=swap");
+
+footer {
+  color: var(--accentColor);
+  background-color: var(--mainColor);
+  text-align: justify;
+  padding: 15px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+header {
+  margin-bottom: 50px;
+  color: var(--accentColor);
+  background-color: var(--mainColor);
 }
 
-* {
+nav a:hover {
+  color: var(--quarternaryColor);
+}
+
+:root {
+  --mainColor: #294856;
+  --secondaryColor: #82929e;
+  --tertiaryColor: #b2bdd3;
+  --quarternaryColor: #528fab;
+  --accentColor: #acb4b4;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0ms !important;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: var(--accentColor);
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3,
+a {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+h5 {
+  font-size: 0.75rem;
+}
+
+#outlined-required-activity {
+  height: 100px;
+}
+
+#outlined-required-description {
+  height: 175px;
+}
+
+ul.control-dots {
+  z-index: 0;
 }
