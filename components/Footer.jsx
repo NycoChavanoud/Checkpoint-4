@@ -5,8 +5,10 @@ export default function Footer() {
   return (
     <footer className={style.globalFooter}>
       <div className={style.containerFooter}>
-        <div>AAAAA</div>
-        <div>BBBB</div>
+        <div>créé par @RoyalDistrict</div>
+        <Link passHref href="/espace-royal">
+          <div className={style.linkRoyalAdmin}>Espace ROYAL</div>
+        </Link>
       </div>
     </footer>
   );

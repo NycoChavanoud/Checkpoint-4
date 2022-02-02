@@ -5,7 +5,6 @@
   margin: 30px auto;
   padding: 20px;
   font-family: "Antic Didone", serif;
-
   border: solid 2px var(--secondaryColor);
   border-radius: 1em;
 }
@@ -47,11 +46,11 @@
   width: 100%;
   height: 33%;
   border-radius: 1em;
-  border: solid 3px goldenrod;
+  border: solid 3px var(--mainColor);
   cursor: pointer;
-  background: var(--mainColor);
-  color: var(--accentColor);
-  font-family: "Antic Didone", serif;
+  background: var(--accentColor);
+  color: var(--mainColor);
+  font-family: "Rowdies", cursive;
   font-size: 0.8em;
   letter-spacing: 3px;
   margin-bottom: 25px;
@@ -64,11 +63,11 @@
   width: 100%;
   height: 33%;
   border-radius: 1em;
-  border: solid 3px goldenrod;
+  border: solid 3px var(--mainColor);
   cursor: pointer;
-  background: var(--mainColor);
-  color: var(--accentColor);
-  font-family: "Antic Didone", serif;
+  background: var(--accentColor);
+  color: var(--mainColor);
+  font-family: "Rowdies", cursive;
   font-size: 0.8em;
   letter-spacing: 3px;
   text-align: center;
