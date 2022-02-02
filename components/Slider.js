@@ -12,32 +12,43 @@ export default function Slider() {
   return (
     <>
       <div className={style.carousselContainer}>
-        <Carousel infiniteLoop autoPlay interval={2000} transitionTime={500}>
+        <Carousel
+          infiniteLoop
+          autoPlay
+          interval={2000}
+          transitionTime={500}
+          showThumbs={false}
+        >
           <Image
+            key={image1}
             src={image1}
             className={style.photoCaroussel}
             alt=""
             layout="intrinsic"
           />
           <Image
+            key={image2}
             src={image2}
             className={style.photoCaroussel}
             alt=""
             layout="intrinsic"
           />
           <Image
+            key={image3}
             src={image3}
             className={style.photoCaroussel}
             alt=""
             layout="intrinsic"
           />
           <Image
+            key={image4}
             src={image4}
             className={style.photoCaroussel}
             alt=""
             layout="intrinsic"
           />
           <Image
+            key={image5}
             src={image5}
             className={style.photoCaroussel}
             alt=""

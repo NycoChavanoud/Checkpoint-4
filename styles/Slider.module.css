@@ -11,3 +11,9 @@
 .photoCaroussel {
   border-radius: 1em 1em 0 0;
 }
+
+@media only screen and (max-width: 780px) {
+  .carousselContainer {
+    width: 100%;
+  }
+}

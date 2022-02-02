@@ -16,6 +16,7 @@
 .textHome {
   margin-top: 15px;
   font-size: 1em;
+  text-align: justify;
 }
 
 .signRoyal {
@@ -36,7 +37,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* margin-right: auto; */
   margin-left: auto;
   width: 40%;
 }
@@ -55,6 +55,7 @@
   font-size: 1.2em;
   letter-spacing: 3px;
   margin-bottom: 25px;
+  text-align: center;
 }
 .cardsLinkLast {
   display: flex;
@@ -70,4 +71,26 @@
   font-family: "Rowdies", cursive;
   font-size: 1.2em;
   letter-spacing: 3px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 780px) {
+  .textHomeContainer {
+    width: 95%;
+  }
+
+  .contentHomePageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .cardsLinkContainer {
+    width: 100%;
+    margin: 20px auto;
+  }
 }
