@@ -4,7 +4,7 @@
   width: 50%;
   background: var(--mainColor);
   border-radius: 1em;
-  border: solid 3px var(--mainColor);
+  border: solid 4px var(--mainColor);
   overflow: hidden;
 }
 

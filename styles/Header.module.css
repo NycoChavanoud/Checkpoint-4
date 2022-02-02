@@ -7,12 +7,6 @@
   display: flex;
 }
 
-/* .logo {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-} */
-
 .containerHead {
   display: flex;
   flex-direction: column;
@@ -39,4 +33,18 @@
 
 .linkTitle {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 780px) {
+  .globalHeader {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .titleGlobal {
+    font-size: 1.2em;
+  }
 }
