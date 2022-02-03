@@ -32,11 +32,10 @@ export default function RoyalMessage() {
       </div>
       <div className={style.textPageJoke}>
         {" "}
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut pariatur
-        itaque sit modi tenetur rerum, asperiores repellendus beatae qui
-        corrupti ratione a vel alias esse et explicabo harum accusamus iusto
-        fugit perferendis tempore? At iste error voluptatibus adipisci, facilis
-        numquam, hic vel dolores ullam, ea earum sed iusto quia nobis!{" "}
+        Dans sa grandeur, Son altesse Sereinissime fait par à l&apos;ensemble de
+        ces travaux à l&apos;ensemble de ces sujets. Comme la démocratie est un
+        principe fondamental de notre belle cité, vos réactions sont les
+        bienvenues.
       </div>
 
       <div className={style.jokeContainer}>
@@ -59,7 +58,7 @@ export default function RoyalMessage() {
         </div>
         <div className={style.btnContainer}>
           <button onClick={fectchJoke} className={style.btnFetch}>
-            Vous en voulez encore?
+            Pensée royale suivante...
           </button>
           <button className={style.fakeBtn}>Une réclammation?</button>
         </div>

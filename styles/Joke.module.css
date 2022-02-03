@@ -76,25 +76,56 @@
   width: 100%;
 }
 .btnFetch {
-  color: red;
+  color: var(--mainColor);
+  background: var(--secondaryColor);
   margin: 20px auto;
-  width: 80%;
+  width: 50%;
   cursor: pointer;
   font-size: 1.5em;
   border-radius: 1em;
+  border: none;
+  transition: 0.5s;
+}
+.btnFetch:hover {
+  background: goldenrod;
+  color: var(--mainColor);
+  border: none;
 }
 
 .fakeBtn {
-  color: blue;
+  color: orangered;
+  background: var(--mainColor);
   margin: 20px auto;
-  width: 80%;
+  width: 50%;
   border: none;
-  font-size: 1.5em;
+  font-size: 0.8em;
   border-radius: 1em;
+  cursor: pointer;
 }
 
 .fakeBtn:hover {
   background: var(--mainColor);
   color: var(--mainColor);
   border: none;
+  cursor: none;
+}
+
+@media only screen and (max-width: 780px) {
+  .jokeContainer {
+    width: 95%;
+  }
+  .textPageJoke {
+    width: 85%;
+  }
+
+  .contentJoke {
+    width: 95%;
+  }
+
+  .responseJoke {
+    width: 95%;
+  }
+  .btnFetch {
+    width: 95%;
+  }
 }

@@ -84,7 +84,7 @@ export default function RoyalAdmin() {
 
           <label htmlFor="description" className={style.labelInfoMembers}>
             <h3 className={style.titleInput}>Description</h3>
-            <input
+            <textarea
               required
               className={style.inputForm}
               value={description}
@@ -95,15 +95,8 @@ export default function RoyalAdmin() {
           </label>
 
           <label htmlFor="url" className={style.labelInfoMembers}>
-            <h3 className={style.titleInput}>Url de photo</h3>
-            {/* <input
-              required
-              className={style.inputForm}
-              value={imageUrl}
-              onChange={(e) => {
-                setImageUrl(e.target.value);
-              }}
-            /> */}
+            <h3 className={style.titleInput}>Upload de photo</h3>
+
             <UploadButtons
               onFileUploaded={setImageUrl}
               content="Upload"
