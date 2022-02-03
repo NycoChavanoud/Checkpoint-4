@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import Layout from "../../components/Layout";
+import UploadButtons from "../../components/uploadButtons";
 import style from "../../styles/RoyalSpace.module.css";
 
 export default function RoyalAdmin() {
@@ -95,13 +96,18 @@ export default function RoyalAdmin() {
 
           <label htmlFor="url" className={style.labelInfoMembers}>
             <h3 className={style.titleInput}>Url de photo</h3>
-            <input
+            {/* <input
               required
               className={style.inputForm}
               value={imageUrl}
               onChange={(e) => {
                 setImageUrl(e.target.value);
               }}
+            /> */}
+            <UploadButtons
+              onFileUploaded={setImageUrl}
+              content="Upload"
+              accept=".pdf, image/*"
             />
           </label>
           <div className={style.btnContainer}>

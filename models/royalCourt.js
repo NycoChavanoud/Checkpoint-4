@@ -9,6 +9,12 @@ const collection = db.collection("membersCourt");
 async function getMembers() {
   return await collection.find().toArray();
 }
+
+async function getOneMember(memberId) {
+  const member = await collection.find({ _id: ObjectId(memberId) }).next();
+  return member;
+}
+
 const createMember = ({ name, role, baseLine, description, imageUrl }) => {
   return collection
     .insertOne({ name, role, baseLine, description, imageUrl })
@@ -25,4 +31,5 @@ const createMember = ({ name, role, baseLine, description, imageUrl }) => {
 module.exports = {
   createMember,
   getMembers,
+  getOneMember,
 };

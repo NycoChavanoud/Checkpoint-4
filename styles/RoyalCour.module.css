@@ -1,0 +1,47 @@
+.listMemberContainer {
+  display: flex;
+  height: 180px;
+  width: 100%;
+  overflow-x: scroll;
+}
+.listMemberContainer::-webkit-scrollbar {
+  display: none;
+}
+ul.memberContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.listMembers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  cursor: pointer;
+}
+
+.imagecontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  background: var(--mainColor);
+  border-radius: 1em 50%;
+}
+
+.avatarOnList {
+  width: 100px;
+}
+.nameOnList {
+  color: var(--mainColor);
+  font-size: 0.8em;
+  overflow: scroll;
+  height: 1em;
+}
+.nameOnList::-webkit-scrollbar {
+  display: none;
+}
