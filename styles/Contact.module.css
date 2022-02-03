@@ -1,0 +1,59 @@
+.formContactStyle {
+  width: 60%;
+  border: 2px solid var(--mainColor);
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+}
+
+.titleInput {
+  margin-top: 20px auto 0;
+}
+
+.labelContactMembers {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnContainer {
+  margin-top: 30px;
+}
+
+.formHeaderContainer {
+  width: 60%;
+  margin: 10px auto;
+  display: flex;
+}
+
+.txtHeaderContact {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "Antic Didone", serif;
+  font-size: 1.4em;
+}
+
+.avatarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 780px) {
+  .formHeaderContainer {
+    width: 90%;
+  }
+  .avatarContainer {
+    display: none;
+  }
+  .formContactStyle {
+    width: 90%;
+  }
+}
