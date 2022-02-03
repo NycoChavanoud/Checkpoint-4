@@ -33,6 +33,11 @@
 
 .linkTitle {
   cursor: pointer;
+  transition: 0.5s;
+}
+.linkTitle:hover,
+.linkTitle:focus {
+  color: white;
 }
 
 @media only screen and (max-width: 780px) {

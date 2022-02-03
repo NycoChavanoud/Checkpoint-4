@@ -6,11 +6,8 @@ const collection = db.collection("membersCourt");
 //   return collection.insertOne(data);
 // }
 
-function getMembers() {
-  return collection
-    .find()
-    .toArray()
-    .then((res) => res[0]);
+async function getMembers() {
+  return await collection.find().toArray();
 }
 const createMember = ({ name, role, baseLine, description, imageUrl }) => {
   return collection

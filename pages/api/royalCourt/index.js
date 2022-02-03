@@ -1,5 +1,8 @@
 import base from "../../../middlewares/common";
-import royalCourt, { createMember } from "../../../models/royalCourt";
+import royalCourt, {
+  createMember,
+  getMembers,
+} from "../../../models/royalCourt";
 
 const handleGetMembers = async (req, res) => {
   res.send(await royalCourt.getMembers());

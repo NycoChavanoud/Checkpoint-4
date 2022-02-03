@@ -1,0 +1,72 @@
+.adminRoyalMessageContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: "Antic Didone", serif;
+  border: solid 2px var(--secondaryColor);
+  border-radius: 1em;
+}
+.adminRoyalTitle {
+  font-size: 1.5em;
+}
+.adminRoyalMessage {
+  margin-top: 15px;
+  font-size: 1em;
+  text-align: justify;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  font-family: "Antic Didone", serif;
+  border: solid 2px var(--secondaryColor);
+  background: var(--mainColor);
+  border-radius: 1em;
+  color: var(--accentColor);
+}
+
+.titleInput {
+  margin: 25px auto 3px;
+}
+
+.inputForm {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1em;
+  text-align: center;
+  font-size: 1em;
+}
+
+.btnContainer {
+  width: 100%;
+  margin: 30px auto 15px;
+}
+.sendBtn {
+  width: 70%;
+  border-radius: 1em;
+  font-size: 1.1em;
+  background: var(--accentColor);
+  color: var(--mainColor);
+  cursor: pointer;
+}
+.sendBtn:hover,
+.sendBtn:focus {
+  background-color: var(--secondaryColor);
+  color: whitesmoke;
+}
+
+@media only screen and (max-width: 780px) {
+  .adminRoyalMessageContainer {
+    width: 95%;
+  }
+  .formContainer {
+    width: 95%;
+  }
+}

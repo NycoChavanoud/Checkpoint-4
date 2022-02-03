@@ -14,4 +14,10 @@
 }
 .linkRoyalAdmin {
   cursor: pointer;
+  transition: 1s;
+}
+.linkRoyalAdmin:hover,
+.linkRoyalAdmin:focus {
+  color: var(--mainColor);
+  font-weight: bolder;
 }
